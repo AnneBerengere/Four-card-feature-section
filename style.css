@@ -1,0 +1,243 @@
+/*tout format*/
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: 0 0.4em 1em -0.5em hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .header_page {
+     font-weight: 200;
+     color: hsl(234, 12%, 34%);
+ }
+
+ .titre {
+     font-weight: 600;
+     color: hsl(234, 12%, 34%);
+ }
+
+ .content{
+     font-weight: 400;
+     color: hsl(229, 6%, 66%);
+ }
+
+ .card {
+     background-color: white;
+     box-shadow: 0 0.4em 1em -0.5em hsl(229, 6%, 66%);
+     height: 173px;
+     width: 242px;
+     border-radius: 0.7em;
+     display: flex;
+     flex-direction: column;
+     margin: 0.7em;
+     overflow: hidden;
+ }
+
+ .color_card {
+     width: 250px;
+     height: 0.2em;
+     margin-top: 0em;
+ }
+
+ .color_card_supervisor {
+       background-color: hsl(180, 62%, 55%);
+   }
+
+.color_card_teambuilder {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.color_card_karma {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.color_card_calculator {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.contenu {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/*ordinateur*/
+@media only screen and (min-width: 851px) {
+
+    .container {
+        width: 1000px;
+        height: 640px;
+    }
+
+    .container_card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1.4em;
+    }
+
+    .container_card_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        width: 355px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_page {
+        font-size: 1.6em;
+    }
+
+    .titre_page {
+        font-size: 1.6em;
+    }
+
+    .content_page {
+        font-size: 0.7em;
+        margin: 1.3em 0;
+    }
+
+    .contenu {
+        height: 160px;
+    }
+
+    .titre_card {
+        font-size: 0.9em;
+    }
+
+    .content_card {
+        font-size: 0.6em;
+        line-height: 1.6em;
+        margin-top: 0.6em;
+    }
+
+    .logo_card {
+        height: 3em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .logo_card > img {
+        height: 100%;
+        width: auto;
+    }
+
+ }
+
+
+/*mobile*/
+@media only screen and (max-width: 850px) {
+
+     .container_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.4em;
+    }
+
+    .container_card_column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_page {
+        font-size: 1.2em;
+    }
+
+    .titre_page {
+        margin-top: 0.1em;
+        font-size: 1.2em;
+    }
+
+    .content_page {
+        font-size: 0.8em;
+        margin: 1.4em 0;
+    }
+
+    .contenu {
+        height: 160px;
+    }
+
+    .card {
+        margin: 0.6em;
+        overflow: hidden;
+    }
+
+    .color_card {
+        width: 250px;
+        height: 0.2em;
+        margin-top: 0em;
+    }
+
+    .titre_card {
+        font-size: 0.9em;
+    }
+
+    .content_card {
+        font-size: 0.6em;
+        line-height: 1.6em;
+        margin-top: 0.6em;
+    }
+
+    .logo_card {
+        height: 3em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .logo_card > img {
+        height: 100%;
+        width: auto;
+    }
+
+}
